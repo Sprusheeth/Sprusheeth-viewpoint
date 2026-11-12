@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#ecece8"><title>Sprusheeth Rao — Developer & Curious Builder</title><meta name="author" content="Mattapally Sprusheeth Rao"><meta name="description" content="Catalogued works of web, game and AI development by Sprusheeth Rao: DesertRunner, an IEEE research paper, and 22 certifications."><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&display=swap"><link rel="stylesheet" href="style.css"><script src="app.js" defer></script></head>
+<body><a class="skip" href="#main">Skip to content</a>
+
+<header class="bar">
+  <nav class="tabs" aria-label="Sections"><button data-view="work" aria-pressed="true">Work</button><button data-view="info" aria-pressed="false">Info</button></nav>
+  <p class="bar-mid">Sprusheeth © <span class="yr">2026</span></p>
+  <p class="bar-end">18.00° N, 79.56° E</p>
+</header>
+
+<main id="main">
+  <section id="view-work" aria-label="Work">
+    <div class="intro"><span>Selected work [ 04 ]</span><span class="hint">Select a title to open the case study</span></div>
+    <div class="list" id="work-list">
+      <button class="row" data-project="desert"><span class="num">[ 01 ]</span><span class="name">DesertRunner</span><span class="tag">[ Unity · C# ]</span></button>
+      <button class="row" data-project="bug"><span class="num">[ 02 ]</span><span class="name">AI Bug Fixing</span><span class="tag">[ AI/ML · Java · Python ]</span></button>
+      <button class="row" data-project="tourist"><span class="num">[ 03 ]</span><span class="name">Tourist Safety</span><span class="tag">[ SIH · Java · SQL ]</span></button>
+      <button class="row" data-project="blog"><span class="num">[ 04 ]</span><span class="name">Blog Website</span><span class="tag">[ HTML · CSS · JS ]</span></button>
+    </div>
+  </section>
+
+  <section id="view-info" class="info" aria-label="Info" hidden>
+    <div class="blk"><h2>About</h2><div class="about">
+      <img class="portrait" src="assets/portrait.jpg" alt="Sprusheeth Rao" width="480" height="600">
+      <div><p class="bio">Sprusheeth Rao is a computer science student at SR University who learns best by building: responsive websites, AI-assisted developer tools, and 3D game worlds.</p><p class="sub">Serious about code, playful by nature. Outside the editor, a strategic gamer who stays curious, adapts quickly, and keeps trying until the pieces click.</p></div>
+    </div></div>
+
+    <div class="blk"><h2>Education</h2><div class="kv"><p><b>SR University</b><span>Computer Science</span><i>[ 2023 — 2027 ]</i></p><p><b>Based in</b><span>Hanamkonda, Telangana</span><i>[ EN · HI · TE ]</i></p></div></div>
+
+    <div class="blk"><h2>Research</h2><div class="kv"><p><b>Rainfall Prediction Using Machine Learning</b><span>IEEE research paper applying data analysis and predictive modeling to rainfall patterns.</span><i>[ IEEE ]</i></p></div></div>
+
+    <div class="blk" id="credentials"><h2>Credentials <small>[ 22 ]</small></h2><div>
+      <div class="cfilters" role="group" aria-label="Filter certifications"><button data-cert-filter="all" aria-pressed="true">All [ 22 ]</button><button data-cert-filter="aws" aria-pressed="false">AWS Academy [ 5 ]</button><button data-cert-filter="cisco" aria-pressed="false">Cisco [ 4 ]</button><button data-cert-filter="infosys" aria-pressed="false">Infosys Springboard [ 13 ]</button></div>
+      <div id="cert-list" class="clist"></div>
+      <p class="fine">Select a certificate to open its PDF in a new tab.</p>
+    </div></div>
+
+    <div class="blk"><h2>Toolkit</h2><div class="kv">
+      <p><b>Languages &amp; web</b><span>Java · C · Python · HTML · CSS · JavaScript · Oracle SQL</span></p>
+      <p><b>Frameworks &amp; tools</b><span>React · Node.js · Git · Linux</span></p>
+      <p><b>Cloud &amp; data</b><span>AWS Cloud · Cloud security · Data engineering · Data analytics</span></p>
+      <p><b>AI &amp; ML</b><span>Machine learning with Python · Deep learning · NLP · Computer vision</span></p>
+      <p><b>Games</b><span>Unity · C# · Procedural generation · Game mechanics</span></p>
+      <p><b>Process</b><span>Problem-solving · Teamwork · Communication · Adaptability</span></p>
+    </div></div>
+
+    <div class="blk" id="contact"><h2>Socials</h2><div class="links">
+      <a href="mailto:Sprusheethrao.m@gmail.com">Email <i>↗</i></a>
+      <a href="https://github.com/Sprusheeth" target="_blank" rel="noopener">GitHub <i>↗</i></a>
+      <a href="https://www.linkedin.com/in/sprusheeth-rao-b8a624266/" target="_blank" rel="noopener">LinkedIn <i>↗</i></a>
+      <a href="assets/SprusheethRao-CV.pdf" target="_blank" rel="noopener">Résumé <i>↗</i></a>
+      <button id="copy-email">Copy email <i>⧉</i></button>
+      <p id="copy-status" class="fine" role="status"></p>
+    </div></div>
+  </section>
+</main>
+
+<footer class="foot"><span>Web + Game + AI.</span><span>All rights reserved</span><span>IST <time id="clock">--:--</time></span></footer>
+
+<aside class="preview" id="preview" aria-hidden="true"></aside>
+<dialog id="project-dialog" aria-labelledby="dialog-title"><button class="close-dialog" aria-label="Close project details">✕</button><div id="dialog-content"></div></dialog>
+</body></html>
